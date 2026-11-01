@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1000" width="750" height="1000">
+  <defs>
+    <radialGradient id="charcoalBackdrop" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#18181e" />
+      <stop offset="60%" stop-color="#0e0e12" />
+      <stop offset="100%" stop-color="#060608" />
+    </radialGradient>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1f24" />
+      <stop offset="50%" stop-color="#101014" />
+      <stop offset="100%" stop-color="#08080a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Black Gallery Frame -->
+  <rect x="0" y="0" width="750" height="1000" fill="url(#frameGradient)" />
+  <rect x="15" y="15" width="720" height="970" fill="none" stroke="#25252c" stroke-width="2" />
+  
+  <!-- Passe-partout / Inner Canvas -->
+  <rect x="35" y="35" width="680" height="930" fill="url(#charcoalBackdrop)" />
+
+  <!-- Diagonal Bold Minimalist Typography: PORSCHE / 911 GT3 RS -->
+  <g transform="rotate(-28 375 420)" opacity="0.14">
+    <text x="375" y="380" font-family="'Cinzel', 'Oswald', sans-serif" font-weight="900" font-size="90" fill="#ffffff" letter-spacing="18" text-anchor="middle">PORSCHE</text>
+    <text x="375" y="470" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="52" fill="#ffffff" letter-spacing="12" text-anchor="middle">911 GT3 RS</text>
+  </g>
+
+  <!-- Top Minimalist Brand Header -->
+  <text x="375" y="130" font-family="'Cinzel', serif" font-weight="700" font-size="28" fill="#f4f1ea" letter-spacing="14" text-anchor="middle">PORSCHE 911 GT3 RS</text>
+  <text x="375" y="165" font-family="'JetBrains Mono', monospace" font-size="13" fill="#9e9a90" letter-spacing="6" text-anchor="middle">DARK GREY // MONOCHROME AERODYNAMICS</text>
+
+  <!-- Charcoal Coloured Porsche 911 GT3 RS Silhouette -->
+  <g transform="translate(65, 360)">
+    <!-- Floor Shadow -->
+    <ellipse cx="310" cy="235" rx="280" ry="20" fill="#000000" opacity="0.9" />
+
+    <!-- Swan-Neck Carbon Wing -->
+    <path d="M540 145 L565 65 L590 65 L570 145 Z" fill="#121216" stroke="#52525b" stroke-width="1.5" />
+    <path d="M515 65 L625 65 L615 78 L535 78 Z" fill="#27272a" stroke="#71717a" stroke-width="1" />
+
+    <!-- Charcoal Body Surface with Razor Subtle Highlights -->
+    <path d="M50 200 C65 175 110 162 170 158 C220 154 260 115 320 95 C380 75 440 85 480 110 C520 135 550 170 575 185 L585 190 L585 210 C575 220 550 225 520 225 L90 225 C65 225 50 215 50 200 Z" fill="#26262e" stroke="#52525b" stroke-width="2" />
+    
+    <!-- Sharp Roof & Window Edge -->
+    <path d="M260 145 C285 115 330 102 380 100 C430 98 460 115 480 145 Z" fill="#0d0d11" stroke="#3f3f46" stroke-width="1.5" />
+
+    <!-- Carbon Louvers & Aero Blade -->
+    <g fill="#18181c">
+      <rect x="155" y="160" width="30" height="4" rx="2" />
+      <rect x="152" y="166" width="35" height="4" rx="2" />
+      <rect x="150" y="172" width="38" height="4" rx="2" />
+      <path d="M260 195 L390 195 L370 215 L280 215 Z" />
+    </g>
+
+    <!-- Wheels (Matte Anodized Charcoal) -->
+    <g transform="translate(140, 215)">
+      <circle cx="0" cy="0" r="44" fill="#0d0d11" stroke="#3f3f46" stroke-width="4" />
+      <circle cx="0" cy="0" r="30" fill="#18181e" stroke="#52525b" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="8" fill="#a1a1aa" />
+    </g>
+    <g transform="translate(480, 215)">
+      <circle cx="0" cy="0" r="44" fill="#0d0d11" stroke="#3f3f46" stroke-width="4" />
+      <circle cx="0" cy="0" r="30" fill="#18181e" stroke="#52525b" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="8" fill="#a1a1aa" />
+    </g>
+  </g>
+
+  <!-- Editorial Specs Footer (Note: No size mentioned here either) -->
+  <g transform="translate(375, 760)" text-anchor="middle">
+    <line x1="-220" y1="0" x2="220" y2="0" stroke="#252530" stroke-width="1" />
+    <text y="40" font-family="'Cinzel', serif" font-size="20" fill="#ffffff" letter-spacing="6">STUTTGART MOTORSPORT</text>
+    <text y="70" font-family="'JetBrains Mono', monospace" font-size="12" fill="#71717a" letter-spacing="3">4.0L HIGH-REVVING FLAT-6 · CHARCOAL EDITION</text>
+    <text y="100" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a1a1aa" letter-spacing="4">VELTOR ARCHIVE · BLACK GALLERY FRAME</text>
+  </g>
+</svg>

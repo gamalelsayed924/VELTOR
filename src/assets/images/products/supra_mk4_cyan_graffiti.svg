@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1000" width="750" height="1000">
+  <defs>
+    <!-- Frame gradients and shadows -->
+    <radialGradient id="darkVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#121824" />
+      <stop offset="70%" stop-color="#080C12" />
+      <stop offset="100%" stop-color="#040608" />
+    </radialGradient>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1f24" />
+      <stop offset="50%" stop-color="#101014" />
+      <stop offset="100%" stop-color="#08080a" />
+    </linearGradient>
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer Black Gallery Frame (30px border) -->
+  <rect x="0" y="0" width="750" height="1000" fill="url(#frameGradient)" />
+  <rect x="15" y="15" width="720" height="970" fill="none" stroke="#2a2a32" stroke-width="2" />
+  
+  <!-- Passe-partout / Inner Canvas -->
+  <rect x="35" y="35" width="680" height="930" fill="url(#darkVignette)" />
+
+  <!-- Urban Night Skyline & Grid Texture -->
+  <g opacity="0.15">
+    <path d="M40 500 L710 500 M40 560 L710 560 M40 620 L710 620 M40 680 L710 680" stroke="#00f2fe" stroke-width="1" />
+    <path d="M120 400 L120 720 M240 400 L240 720 M360 400 L360 720 M480 400 L480 720 M600 400 L600 720" stroke="#00f2fe" stroke-width="1" />
+  </g>
+
+  <!-- Cyan Graffiti Splatters & Halftones -->
+  <g filter="url(#neonGlow)">
+    <circle cx="210" cy="340" r="140" fill="#00f2fe" opacity="0.08" />
+    <circle cx="560" cy="420" r="160" fill="#4facfe" opacity="0.06" />
+    <path d="M100 240 Q180 200 260 250 T380 220" stroke="#00f2fe" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round" />
+    <path d="M480 260 Q560 210 640 280" stroke="#00f2fe" stroke-width="3" fill="none" opacity="0.3" stroke-linecap="round" />
+  </g>
+
+  <!-- Japanese & Typography Elements -->
+  <text x="375" y="140" font-family="'Cinzel', 'Oswald', sans-serif" font-weight="700" font-size="44" fill="#ffffff" letter-spacing="12" text-anchor="middle">SUPRA MK4</text>
+  <text x="375" y="180" font-family="'JetBrains Mono', monospace" font-size="14" fill="#00f2fe" letter-spacing="8" text-anchor="middle">2JZ-GTE // TWIN TURBO URBAN LEGEND</text>
+  <text x="650" y="240" font-family="sans-serif" font-size="32" fill="#00f2fe" opacity="0.3" text-anchor="end" font-weight="bold">スープラ</text>
+
+  <!-- Toyota Supra MK4 Silhouette & Aerodynamic Profile -->
+  <g transform="translate(60, 360)">
+    <!-- Car Body Shadow -->
+    <ellipse cx="315" cy="240" rx="280" ry="22" fill="#000000" opacity="0.8" />
+    
+    <!-- Neon Underglow -->
+    <ellipse cx="315" cy="235" rx="240" ry="14" fill="#00f2fe" opacity="0.35" filter="url(#neonGlow)" />
+
+    <!-- Supra Body Lines (Aero shape, famous rear spoiler, fastback curve) -->
+    <path d="M60 200 C70 175 110 160 170 155 C220 150 260 115 320 100 C390 85 450 95 490 120 C530 140 560 170 580 185 L590 190 L590 210 C585 220 565 225 540 225 L100 225 C75 225 60 215 60 200 Z" fill="#0f1622" stroke="#00f2fe" stroke-width="2.5" />
+    
+    <!-- Iconic MK4 Rear Wing -->
+    <path d="M545 170 C550 140 560 115 570 95 L595 95 C590 125 580 160 575 185 Z" fill="#090e16" stroke="#00f2fe" stroke-width="2" />
+    <path d="M525 95 Q575 88 615 95" stroke="#00f2fe" stroke-width="4" stroke-linecap="round" fill="none" filter="url(#neonGlow)" />
+
+    <!-- Greenhouse & Windows -->
+    <path d="M260 145 C285 120 330 110 380 108 C425 106 460 120 480 145 Z" fill="#05080c" stroke="#4facfe" stroke-width="1.5" />
+    <path d="M375 110 L370 145" stroke="#1f2c3d" stroke-width="2" />
+
+    <!-- Headlight & Front Scoop -->
+    <path d="M80 190 L115 185 L120 195 L85 198 Z" fill="#00f2fe" filter="url(#neonGlow)" opacity="0.8" />
+    <path d="M90 205 L150 205" stroke="#00f2fe" stroke-width="2" opacity="0.7" />
+
+    <!-- Wheels (Front & Rear) -->
+    <g transform="translate(145, 215)">
+      <circle cx="0" cy="0" r="42" fill="#0a0a0f" stroke="#00f2fe" stroke-width="3" />
+      <circle cx="0" cy="0" r="28" fill="#141824" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="8" fill="#00f2fe" />
+    </g>
+    <g transform="translate(485, 215)">
+      <circle cx="0" cy="0" r="42" fill="#0a0a0f" stroke="#00f2fe" stroke-width="3" />
+      <circle cx="0" cy="0" r="28" fill="#141824" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="8" fill="#00f2fe" />
+    </g>
+  </g>
+
+  <!-- Cyan Graffiti Splatter Accents -->
+  <g fill="#00f2fe" opacity="0.75" filter="url(#neonGlow)">
+    <circle cx="120" cy="670" r="3" />
+    <circle cx="135" cy="685" r="5" />
+    <circle cx="150" cy="665" r="2" />
+    <circle cx="580" cy="650" r="4" />
+    <circle cx="610" cy="670" r="6" />
+    <circle cx="630" cy="640" r="3" />
+  </g>
+
+  <!-- Editorial Specs Footer Section -->
+  <g transform="translate(375, 760)" text-anchor="middle">
+    <line x1="-220" y1="0" x2="220" y2="0" stroke="#253346" stroke-width="1" />
+    <text y="40" font-family="'Cinzel', serif" font-size="20" fill="#ffffff" letter-spacing="6">TOYOTA MOTORSPORT</text>
+    <text y="70" font-family="'JetBrains Mono', monospace" font-size="12" fill="#758a9e" letter-spacing="3">INLINE-6 TWIN TURBO · 320 HP · 6-SPEED MANUAL</text>
+    <text y="100" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f2fe" letter-spacing="4">VELTOR ARCHIVE · SPEC 20×30 CM</text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "VELTOR — Luxury Automotive Wall Art",
+  "description": "VELTOR (DRIVE YOUR PASSION) — Premium graphic-designed automotive wall art for car enthusiasts and luxury interior design collectors in Egypt.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
